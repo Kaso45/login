@@ -13,7 +13,7 @@ registerForm.addEventListener("submit", async (e) => {
   const password = document.getElementById("registerPassword").value;
   try {
     await register(email, password);
-    alert("Registration success");
+    alert("register successful");
   } catch (error) {
     alert(`Registration error: ${error.message}`);
   }
@@ -26,8 +26,8 @@ loginForm.addEventListener("submit", async (e) => {
   const password = document.getElementById("loginPassword").value;
   try {
     await login(email, password);
-  } catch (error) {
-    alert(`Login error: ${error.message}`);
+  } catch (err) {
+    alert(`Login error: ${err.message}`);
   }
 });
 
