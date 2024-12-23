@@ -5,7 +5,6 @@ const loginForm = document.getElementById("loginForm");
 const logoutBtn = document.getElementById("logoutBtn");
 const authForms = document.getElementById("authForms");
 const home = document.getElementById("home");
-const userEmailSpan = document.getElementById("userEmail");
 
 // register function
 registerForm.addEventListener("submit", async (e) => {
